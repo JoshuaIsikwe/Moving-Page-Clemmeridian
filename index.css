@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.new-site{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+}
+a:hover{
+    font-size: 22px;
+    color: red;
+}
+.moving-woman{
+    margin-top: 30px;
+}
+#leaf-1, #leaf-3{
+ animation: moving-leaf-1 2s ease infinite alternate;
+}
+
+#leaf-2, #leaf-4{
+    animation: moving-leaf-2 2s ease infinite alternate;
+}
+@keyframes moving-leaf-1{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-5px);
+    }
+}
+
+@keyframes moving-leaf-2{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(5px);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    h1{
+        font-size: 18px;
+    }
+    a{
+        font-size: 15px;
+        
+    }
+   .new-site{
+       flex-direction: column;
+   }
+    .moving-woman{
+        width: 50px;
+        height: 50px;
+    }
+}
