@@ -7,6 +7,7 @@
 body{
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(174, 175, 221);
 }
 .new-site{
     display: flex;
